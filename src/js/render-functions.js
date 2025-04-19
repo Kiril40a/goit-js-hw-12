@@ -2,6 +2,7 @@ import SimpleLightbox from 'simplelightbox';
 
 let galleryBox = document.querySelector(".gallery");
 let loaderContainer = document.querySelector(".loader-container");
+let moreContainer = document.querySelector(".more-container");
 export function createGallery(images) {
     let liElements = [];
     images.forEach(elem => {
@@ -69,8 +70,8 @@ export function hideLoader() {
     loaderContainer.classList.add('hidden');
 }
 export function showLoadMoreButton() {
-    
+    moreContainer.classList.remove('hidden');
 }
 export function hideLoadMoreButton() {
-    
+    moreContainer.classList.add('hidden');
 }

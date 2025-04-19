@@ -38,6 +38,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  margin-bottom: 24px;
 }
 .gallery-item {
   height: 200px;
@@ -98,6 +99,11 @@
   }
 }
 
+
+.more-container {
+  display: flex;
+  justify-content: center;
+}
 .hidden {
   display: none;
 }
